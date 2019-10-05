@@ -16,7 +16,7 @@
  * 
  * @returns string
  */
-const butterflyTie = (digits: number, pattern: string = "*"): void => {
+const newPattern = (digits: number, pattern: string = "*"): void => {
     console.log("------ BUTTERFLY TIE ------");
 
     for (let index = 0; index < digits; index++) {
@@ -25,7 +25,7 @@ const butterflyTie = (digits: number, pattern: string = "*"): void => {
         for (let subIndex = 0; subIndex <= index; subIndex++) {
             result += pattern;
         }
-        
+
         for (let subIndex = digits - 1; subIndex > index; subIndex--) {
             result += "  ";
         }
@@ -42,7 +42,7 @@ const butterflyTie = (digits: number, pattern: string = "*"): void => {
         for (let subIndex = 0; subIndex < index; subIndex++) {
             result += pattern;
         }
-        
+
         for (let subIndex = digits; subIndex > index; subIndex--) {
             result += "  ";
         }
@@ -56,4 +56,4 @@ const butterflyTie = (digits: number, pattern: string = "*"): void => {
     console.log(" ");
 }
 
-export default butterflyTie;
+export default newPattern;
