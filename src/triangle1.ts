@@ -12,7 +12,7 @@
  * 
  * @returns string
  */
-const triangle1 = (digits: number, pattern: string = "*"): void => {
+const newPattern = (digits: number, pattern: string = "*"): void => {
     console.log("------ TRIANGLE 1 ------");
 
     for (let index = 0; index < digits; index++) {
@@ -27,4 +27,4 @@ const triangle1 = (digits: number, pattern: string = "*"): void => {
     console.log(" ");
 }
 
-export default triangle1
+export default newPattern; 
